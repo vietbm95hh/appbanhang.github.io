@@ -1,6 +1,6 @@
 @extends('layouts.admin.adminLayoutHome')
 @section('content')
-    <x-button-add name="Add" link="{{route('danh_muc.home')}}" class="success"/>
+    <x-button-add name="Add" link="{{route('danh_muc.create')}}" class="success"/>
     <table class="table">
         <thead class="thead-dark">
             <tr>
