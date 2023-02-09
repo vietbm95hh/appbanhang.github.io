@@ -1,1 +1,1 @@
-<a href="{{$link}}" class="btn btn-{{$class}}">{{$name}}</a>
+<a href="{{$link}}" class="btn {{$class}}">{{$name}}</a>

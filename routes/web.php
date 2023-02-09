@@ -19,4 +19,8 @@ Route::get('/', function () {
 Route::prefix('/category')->name('danh_muc.')->group(function () {
     Route::get('/',[categoryController::class, 'index'])->name('home');
     Route::get('/create',[categoryController::class, 'create'])->name('create');
+    Route::post('/create',[categoryController::class, 'add'])->name('add');
+    Route::get('/edit/{id}',[categoryController::class, 'edit'])->name('edit');
+    Route::post('/edit',[categoryController::class,'uploadEdit'])->name('uploadEdit');
+    Route::get('/delete/{id}',[categoryController::class, 'delete'])->name('delete');
 });
